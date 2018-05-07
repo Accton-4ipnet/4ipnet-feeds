@@ -18,7 +18,7 @@ PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL=https://github.com/Accton-4ipnet/4ipnet-cmake.git
 PKG_SOURCE_BRANCH:=github/master
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
-PKG_SOURCE_VERSION:=d0c267013f5723ab855fe9274bc6fc345c32fe49
+PKG_SOURCE_VERSION:=994878b6ed6aaf424d397ebae8dd5e6261c9526a
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 PKG_MAINTAINER:=liam.huang <liam.huang@4ipnet.com>
 PKG_LICENSE:=MIT
@@ -46,7 +46,7 @@ endef
 
 define Package/$(PKG_NAME)
 $(call Package/$(PKG_NAME)/Default)
-  DEPENDS+= +libcurl 
+  DEPENDS+= +libcurl +libuci
   TITLE+= (A)
 endef
 
