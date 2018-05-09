@@ -11,11 +11,15 @@ PKG_NAME:=4ipnet-cmake
 PKG_VERSION:=1.0.0
 PKG_RELEASE:=1
 
+if [[ -z "$(GITPATH)" ]]; then
+GITPATH=github.com:Accton-4ipnet
+fi
+
 # PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 # PKG_SOURCE_URL:=http://10.2.14.1/~liam.huang/
 # PKG_MD5SUM:=34178967967a3b193cdbb32ca97dd93b
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL=git@github.com:Accton-4ipnet/4ipnet-cmake.git
+PKG_SOURCE_URL=git@$(GITPATH)/4ipnet-cmake.git
 PKG_SOURCE_BRANCH:=github/master
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE_VERSION:=994878b6ed6aaf424d397ebae8dd5e6261c9526a
