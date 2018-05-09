@@ -11,11 +11,6 @@ PKG_NAME:=4ipnet-automake
 PKG_VERSION:=1.0.0
 PKG_RELEASE:=1
 
-if [[ -z "$(GITPATH)" ]]; then
-GITPATH=github.com:Accton-4ipnet
-fi
-
-
 # PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
 # PKG_SOURCE_URL:=http://10.2.14.1/~liam.huang/
 # PKG_MD5SUM:=4960ca9fa6aa3f3ab432d99878d7b347
